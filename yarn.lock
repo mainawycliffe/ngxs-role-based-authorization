@@ -301,6 +301,20 @@
     tree-kill "1.2.0"
     webpack-sources "1.2.0"
 
+"@ngxs/storage-plugin@^3.2.0":
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/@ngxs/storage-plugin/-/storage-plugin-3.2.0.tgz#29730a068849290018baeed07b44bf3b4284a25f"
+  integrity sha1-KXMKBohJKQAYuu7Qe0S/O0KEol8=
+  dependencies:
+    tslib "^1.9.0"
+
+"@ngxs/store@^3.2.0":
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/@ngxs/store/-/store-3.2.0.tgz#533939acb41a948a34886943314d2a0d866045c9"
+  integrity sha1-Uzk5rLQalIo0iGlDMU0qDYZgRck=
+  dependencies:
+    tslib "^1.9.0"
+
 "@schematics/angular@7.0.2":
   version "7.0.2"
   resolved "https://registry.yarnpkg.com/@schematics/angular/-/angular-7.0.2.tgz#204f2edc77f3e06ad516e720f456e4847ea0c9ff"
@@ -1061,6 +1075,11 @@ bonjour@^3.5.0:
     dns-txt "^2.0.2"
     multicast-dns "^6.0.1"
     multicast-dns-service-types "^1.1.0"
+
+bootstrap@^4.1.3:
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.1.3.tgz#0eb371af2c8448e8c210411d0cb824a6409a12be"
+  integrity sha512-rDFIzgXcof0jDyjNosjv4Sno77X4KuPeFxG2XZZv1/Kc8DRVGVADdoQyyOVDwPqL36DDmtCQbrpMCqvpPLJQ0w==
 
 brace-expansion@^1.1.7:
   version "1.1.11"
