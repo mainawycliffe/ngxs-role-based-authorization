@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngxs/store';
 import { UserRoleState } from './state/user-role.state';
-import { UserRoleAction } from './state/user-role.actions';
+import { ChangeUserRoleAction } from './state/user-role.actions';
 import { tap } from 'rxjs/operators';
 
 @Component({
@@ -14,16 +14,16 @@ export class AppComponent implements OnInit {
 
   public userRole: string = null;
 
-  public checkUserRole$ = null;
+  public GetUserRole$ = null;
 
   constructor(private store: Store) {}
 
   changeRole(role) {
-    this.store.dispatch(new UserRoleAction(role));
+    this.store.dispatch(new ChangeUserRoleAction(role));
   }
 
   ngOnInit() {
-    this.checkUserRole$ = this.store
+    this.GetUserRole$ = this.store
       .select(UserRoleState.getCurrentUserRole)
       .pipe(
         tap(res => {

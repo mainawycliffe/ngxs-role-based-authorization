@@ -1,5 +1,5 @@
 import { State, Action, StateContext, Selector } from '@ngxs/store';
-import { UserRoleAction } from './user-role.actions';
+import { ChangeUserRoleAction } from './user-role.actions';
 
 export class UserRoleStateModel {
   public role: 'guest' | 'moderator' | 'admin';
@@ -14,8 +14,11 @@ export class UserRoleState {
     return state.role;
   }
 
-  @Action(UserRoleAction)
-  ChangeRole(ctx: StateContext<UserRoleStateModel>, action: UserRoleAction) {
+  @Action(ChangeUserRoleAction)
+  ChangeRole(
+    ctx: StateContext<UserRoleStateModel>,
+    action: ChangeUserRoleAction
+  ) {
     ctx.setState({ role: action.role });
   }
 }

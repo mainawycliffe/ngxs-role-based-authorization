@@ -15,7 +15,7 @@
       </div>
     </div>
     <div class="col-12 ">
-      <ng-container *ngIf="checkUserRole$ | async as role">
+      <ng-container *ngIf="GetUserRole$ | async as role">
         <div [ngSwitch]="role">
           <div *ngSwitchCase="'moderator'">Moderator Template</div>
           <div *ngSwitchCase="'admin'">Admin Template</div>
